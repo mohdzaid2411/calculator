@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*keeps the width and height of a div the same, even if padding is used. */ 
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;/*means 100% viewport heigth*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);/*linear gradient is used for seperating these two colors*/
+}
+
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 50px;
+    background: transparent;
+    box-shadow: 30px 30px 50px rgba(5, 27, 69, 0.5);/*for putting shadow arround the box, first value is for right verticatl second value is for bottom horizontal width and 3rd value is for giving shadow like effect. And is we will use -ve value than effect will be opposite*/
+
+}
+
+input{/*see line no. 13 direct tag names can also be used*/
+    width: 320px;
+    border: 2px solid rgb(15, 15, 53);/*for no border arround input box just right none*/
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder{/*for giving color to pseudo element, means inside input box text color*/
+    color: #ffffff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 12px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.equalBtn{/*see line no. 42 class with two names and one name is utalised*/
+    background-color: #fb7c14;
+}
+
+.operator{
+    color: #6dee0a;
+}
